@@ -25,64 +25,9 @@ class _regisformState extends State<regisform> {
         title: Text('Register'),
       ),
       body: Column(
-        //mainAxisAlignment: MainAxisAlignment.center,
+          //mainAxisAlignment: MainAxisAlignment.center,
 
-        children: [
-          Padding(
-            padding: EdgeInsets.all(padding),
-            child: TextField(
-              controller: firstnamecontroller,
-              decoration: InputDecoration(hintText: 'FirstName'),
-            ),
           ),
-          Padding(
-            padding: EdgeInsets.all(padding),
-            child: TextField(
-              controller: lastnamecontroller,
-              decoration: InputDecoration(hintText: 'LastName'),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(padding),
-            child: TextField(
-              controller: addresscontroller,
-              decoration: InputDecoration(hintText: 'Address'),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(padding),
-            child: TextField(
-              controller: phonecontroller,
-              decoration: InputDecoration(hintText: 'phone'),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(padding),
-            child: TextField(
-              controller: emailcontroller,
-              decoration: InputDecoration(hintText: 'Email'),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(padding),
-            child: TextField(
-              controller: passwordcontroller,
-              decoration: InputDecoration(hintText: 'Password'),
-            ),
-          ),
-          ElevatedButton(
-              onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Home(),
-                  ),
-                );
-              },
-              child: Text('submit')),
-          Text(welcome),
-        ],
-      ),
     );
   }
 }
